@@ -119,7 +119,6 @@
                 <li><strong>Category</strong>: Web design</li>
                 <li><strong>Client</strong>: ASU Company</li>
                 <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
@@ -178,7 +177,6 @@
         description: "A donation platform for fundraising campaigns in Egypt.",
         client: "Athr Foundation",
         date: "1 May, 2025",
-        url: "",
         category: "Platform",
         images: [
           "assets/img/Athr/Home.png",
@@ -196,7 +194,6 @@
         description: "Dessert site offering cinnamon rolls with online orders.",
         client: "Cinnamora Bakery",
         date: "10 Mar, 2025",
-        url: "https://cinnamora.com",
         category: "Restaurant",
         images: [
           "assets/img/Cinnamora/Home.png",
@@ -209,12 +206,37 @@
         description: "A beautiful blog site for flower lovers and gardening.",
         client: "Personal Project",
         date: "5 Apr, 2025",
-        url: "https://flowerblog.com",
         category: "Blog",
         images: [
           "assets/img/flowerBlog/Home.png",
           "assets/img/flowerBlog/Posts.png"
         ]
+      },
+      landmarks: {
+        title: "Famous Landmarks",
+        description: "The Famous Landmarks Blog is your go-to source for everything related to iconic landmarks around the world. From travel tips to historical insights.",
+        client: "Personal Project",
+        date: "15 Mar, 2025",
+        category: "Blog",
+        images: [
+          "assets/img/landmarks/Home.png",
+          "assets/img/landmarks/blogDetails.png",
+        ]
+      },
+      beitkart:{
+         title: "BeitKart",
+        description: "Shooping website where you can find everything you need, Right Here Shop millions of products with fast delivery and great deals every day.",
+        date: "31 Mar, 2025",
+        category: "E-Commerce",
+        images: [
+          "assets/img/BeitKart/home.png",
+          "assets/img/BeitKart/laptops.png",
+          "assets/img/BeitKart/details.png",
+          "assets/img/BeitKart/search.png",
+          "assets/img/BeitKart/Cart.png",
+
+        ]
+
       }
     };
 
@@ -229,7 +251,7 @@
       <li><strong>Category</strong>: ${project.category}</li>
       <li><strong>Client</strong>: ${project.client}</li>
       <li><strong>Project date</strong>: ${project.date}</li>
-      <li><strong>Project URL</strong>: <a href="${project.url}" target="_blank">${project.url}</a></li>
+     
     `;
 
       document.querySelector(".portfolio-description h2").textContent = project.title;
